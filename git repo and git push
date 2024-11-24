@@ -1,0 +1,17 @@
+cd <folder>
+git init
+git add . //adds all files to repo
+git commit -m "Initial commit"
+git remote add origin <repo-url> // adding a github repo
+git push -u origin main // pushes changes to github
+//////////////////////////////////////////////////
+Deleting a Repo
+rm -rf .git
+  git status // to check if deleted
+//////////////////////////////////////////////////
+Cloning just a part of a repo to save space // ex. JSSP has many folders so just clone the folder which you want to check 
+git clone --no-checkout --depth=1 --filter=tree:0 <github> 
+cd <repo> 
+git sparse-checkout set --cone <directory>
+git checkout 
+git sparse-checkout disable // to disable sparse checkout -> Attetion it will add all the folders from the github repo
