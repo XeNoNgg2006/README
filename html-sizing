@@ -1,0 +1,8 @@
+header //mainly in px 
+60px-100px
+/////////////
+main //mainly in vh
+min-height: (100vh - header-height - footer-height);
+////////////////////
+footer //also in px
+100px-150px
